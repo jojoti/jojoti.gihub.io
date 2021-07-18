@@ -1,4 +1,6 @@
-# rf: https://github.com/deliangyang/sntflyv.github.io/blob/master/.github/workflows/node.js.yml
+# rf:
+# https://github.com/deliangyang/sntflyv.github.io/blob/master/.github/workflows/node.js.yml
+# https://github.com/actions/starter-workflows/tree/f6cef1d4ee78102ca76d6a82d329316be127edc7/.github/workflows
 name: Vuepress CI
 
 on:
