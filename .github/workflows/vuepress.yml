@@ -6,8 +6,14 @@ name: Vuepress CI
 on:
   push:
     branches: [ master ]
+    # https://docs.github.com/cn/actions/reference/workflow-syntax-for-github-actions#example-including-paths
+    paths:
+      - './record/**'
   pull_request:
     branches: [ master ]
+    # https://docs.github.com/cn/actions/reference/workflow-syntax-for-github-actions#example-including-paths
+    paths:
+      - './record/**'
 
 jobs:
   build:
@@ -25,7 +31,7 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: yarn docs:build
-#      - run: cp CNAME record/.vuepress/dist
+      #      - run: cp CNAME record/.vuepress/dist
       - name: commit push
         run: |
           rm -rf .git
