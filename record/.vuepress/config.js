@@ -1,4 +1,8 @@
 module.exports = {
+  // rf: https://github.com/deliangyang/sntflyv.github.io/blob/master/docs/.vuepress/config.js
+  title: 'JoJo Wang | 记录的地方',
+  description: '',
+  base: '/',
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -24,9 +28,9 @@ module.exports = {
     // 假如你的文档仓库和项目本身不在一个仓库：
     docsRepo: 'jojoti/jojoti.github.io',
     // 假如文档不是放在仓库的根目录下：
-    docsDir: 'src',
+    docsDir: 'record',
     // 假如文档放在一个特定的分支下：
-    docsBranch: 'main',
+    docsBranch: 'master',
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     locales: {
@@ -52,7 +56,7 @@ module.exports = {
             items: [
               {
                 text: '时间轴',
-                link: '/02-blog/000-timeline'
+                link: '/02-record/000-timeline'
               },
             ]
           },
@@ -95,7 +99,7 @@ module.exports = {
             items: [
               {
                 text: '时间轴',
-                link: '/02-blog/000-timeline'
+                link: '/02-record/000-timeline'
               },
             ]
           },

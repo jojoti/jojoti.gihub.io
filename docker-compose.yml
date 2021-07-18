@@ -7,8 +7,8 @@ services:
     ports:
       - "127.0.0.1:8889:8080"
     volumes:
-      - ./:/home/blog:rw
-    working_dir: /home/blog
+      - ./:/home/record:rw
+    working_dir: /home/record
     # npm install -g vuepress
     command:
     - /bin/sh
