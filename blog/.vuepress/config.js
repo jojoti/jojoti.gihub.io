@@ -12,7 +12,7 @@ module.exports = {
     // '/en': {
     //   lang: 'en-US',
     //   title: 'JoJo Wang',
-    //   description: 'recording'
+    //   description: 'bloging'
     // }
   },
   head: [
@@ -28,7 +28,7 @@ module.exports = {
     // 假如你的文档仓库和项目本身不在一个仓库：
     docsRepo: 'jojoti/jojoti.github.io',
     // 假如文档不是放在仓库的根目录下：
-    docsDir: 'record',
+    docsDir: 'blog',
     // 假如文档放在一个特定的分支下：
     docsBranch: 'master',
     // 默认是 false, 设置为 true 来启用
@@ -56,7 +56,7 @@ module.exports = {
             items: [
               {
                 text: '时间轴',
-                link: '/02-record/000-timeline'
+                link: '/02-blog/000-timeline'
               },
             ]
           },
@@ -99,7 +99,7 @@ module.exports = {
             items: [
               {
                 text: '时间轴',
-                link: '/02-record/000-timeline'
+                link: '/02-blog/000-timeline'
               },
             ]
           },

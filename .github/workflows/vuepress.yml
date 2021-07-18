@@ -8,12 +8,12 @@ on:
     branches: [ master ]
     # https://docs.github.com/cn/actions/reference/workflow-syntax-for-github-actions#example-including-paths
     paths:
-      - './record/**'
+      - './blog/**'
   pull_request:
     branches: [ master ]
     # https://docs.github.com/cn/actions/reference/workflow-syntax-for-github-actions#example-including-paths
     paths:
-      - './record/**'
+      - './blog/**'
 
 jobs:
   build:
@@ -30,12 +30,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm install
-      - run: yarn docs:build
-      #      - run: cp CNAME record/.vuepress/dist
+      - run: npm run docs:build
+      #      - run: yarn docs:build
+      #      - run: cp CNAME blog/.vuepress/dist
       - name: commit push
         run: |
           rm -rf .git
-          cd record/.vuepress/dist
+          cd blog/.vuepress/dist
           git config --global init.defaultBranch gh-pages
           git init
           git branch -m gh-pages
