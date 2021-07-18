@@ -1,6 +1,6 @@
 # JoJo Wang's [thinking](https://jojoti.github.io)
 
-```人们想要的东西往往并不是他们真正需要的，因为两者是受不同的原因驱动的。技术应该让愿望和需求保持一致，并同时满足两者。```————《奇思妙想：15位计算机天才及其重大发现》
+```人们想要的东西往往并不是他们真正需要的，因为两者是受不同的原因驱动的。技术应该让愿望和需求保持一致，并同时满足两者。``` ————《奇思妙想: 15位计算机天才及其重大发现》
 
 ## 关于我
 
@@ -19,26 +19,18 @@
 
 ### 项目 (状态参考: 计划, 开发中, 稳定版本)
 
-+ [Jvm starters](https://github.com/jojoti/experiment-jvm), 开发中~
-
-```
-整合了jvm上 kotlin, java, spring boot, grpc, akka 等无状态web和有状态server的构建等
-```
-
-+ [Build stateful server](https://github.com/jojoti/jo2way), 开发中~
++ [Stateful Gateway](https://github.com/jojoti/jo2way), 开发中~
 
 ```
 快速构建有状态服务, 使用golang实现, 可以支持聊天、游戏server 等待有状态服务的开发，
 backend使用sidecar模式，支持多种语言，可以 python 这样的脚本语言，也可以是jvm上的编译语言等 
 ```
 
-+ [Build dev env](https://github.com/jojoti/jo2env), 开发中~
++ [Jvm Mixed](https://github.com/jojoti/jvm-mixed), 开发中~
 
 ```
-一些工作学习中使用的 dokcer 的配置，dockerfile, docker-compose , docker-swarm 的配置参考
+整合了jvm上 kotlin, java, spring boot, grpc, akka 等无状态web和有状态server的构建等
 ```
-
-+ [分布式自增ID](), 规划中~
 
 ## License
 

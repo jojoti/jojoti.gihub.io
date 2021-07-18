@@ -1,0 +1,39 @@
+# rf: https://github.com/deliangyang/sntflyv.github.io/blob/master/.github/workflows/node.js.yml
+name: Vuepress CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16.x ]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm install
+      - run: yarn docs:build
+#      - run: cp CNAME record/.vuepress/dist
+      - name: commit push
+        run: |
+          rm -rf .git
+          cd record/.vuepress/dist
+          git config --global init.defaultBranch gh-pages
+          git init
+          git branch -m gh-pages
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git config --global user.name 'jojoti'
+          git config --global user.email 'id233233@outlook.com'
+          git add .
+          git commit -m "github action auto build page"
+          git push --set-upstream origin gh-pages -f
