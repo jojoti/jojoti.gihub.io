@@ -74,41 +74,45 @@ module.exports = {
                             title: '使用效率工具制定计划',
                             collapsable: false,
                             children: [
+                                '',
                                 '000-efficiency-use-tools.md',
                             ]
                         },
                     ],
-                    '/02-grpc/': [
-                        {
-                            title: 'GRpc 简介',
-                            collapsable: false,
-                            children: [
-                                '',
-                                '001.intro.md',
-                            ]
-                        },
-                    ],
-                    '/03-blog/': [
-                        {
-                            title: '博客 2021',
-                            collapsable: false,
-                            children: [
-                                '',
-                                '001-build-blog.md',
-                            ]
-                        },
-                    ],
-                    '/': [
-                        {
-                            title: '时间轴',
-                            collapsable: false,
-                            children: [
-                                '',
-                                '2021',
-                                '2020',
-                            ]
-                        },
-                    ],
+                    '/02-grpc/':
+                        [
+                            {
+                                title: 'GRpc 简介',
+                                collapsable: false,
+                                children: [
+                                    '',
+                                    '001.intro.md',
+                                ]
+                            },
+                        ],
+                    '/03-blog/':
+                        [
+                            {
+                                title: '博客 2021',
+                                collapsable: false,
+                                children: [
+                                    '',
+                                    '001-build-blog.md',
+                                ]
+                            },
+                        ],
+                    '/':
+                        [
+                            {
+                                title: '时间轴',
+                                collapsable: false,
+                                children: [
+                                    '',
+                                    '2021',
+                                    '2020',
+                                ]
+                            },
+                        ],
                 }
             }
         }
