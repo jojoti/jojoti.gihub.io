@@ -7,13 +7,17 @@ on:
   push:
     branches: [ master ]
     # https://docs.github.com/cn/actions/reference/workflow-syntax-for-github-actions#example-including-paths
-#    paths:
-#      - './blog/**'
+    paths:
+      - '**.md'
+      - '**.js'
+      - '**.MD'
   pull_request:
     branches: [ master ]
     # https://docs.github.com/cn/actions/reference/workflow-syntax-for-github-actions#example-including-paths
-#    paths:
-#      - './blog/**'
+    paths:
+      - '**.md'
+      - '**.js'
+      - '**.MD'
 
 jobs:
   build:
