@@ -104,7 +104,7 @@ module.exports = {
                     '/':
                         [
                             {
-                                title: '时间轴',
+                                title: 'Timeline',
                                 collapsable: false,
                                 children: [
                                     '',
