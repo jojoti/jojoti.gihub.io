@@ -58,7 +58,7 @@ module.exports = {
                     },
                     {
                         text: '关于',
-                        link: '/about/me'
+                        link: '/about/'
                     },
                     {
                         text: '留言',
@@ -98,6 +98,17 @@ module.exports = {
                                 children: [
                                     '',
                                     '001-build-blog.md',
+                                ]
+                            },
+                        ],
+                    '/about/':
+                        [
+                            {
+                                title: '关于我',
+                                collapsable: false,
+                                children: [
+                                    '',
+                                    'me.md',
                                 ]
                             },
                         ],
