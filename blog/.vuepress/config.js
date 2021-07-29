@@ -93,7 +93,7 @@ module.exports = {
                     '/03-blog/':
                         [
                             {
-                                title: '博客 2021',
+                                title: '2021',
                                 collapsable: false,
                                 children: [
                                     '',

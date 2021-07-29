@@ -11,6 +11,8 @@ on:
       - '**.md'
       - '**.js'
       - '**.MD'
+      - '**.Md'
+      - '**.mD'
   pull_request:
     branches: [ master ]
     # https://docs.github.com/cn/actions/reference/workflow-syntax-for-github-actions#example-including-paths
@@ -18,6 +20,8 @@ on:
       - '**.md'
       - '**.js'
       - '**.MD'
+      - '**.Md'
+      - '**.mD'
 
 jobs:
   build:
