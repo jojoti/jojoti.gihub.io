@@ -83,7 +83,7 @@ module.exports = {
                             title: 'GRpc 简介',
                             collapsable: false,
                             children: [
-                                'readme.md',
+                                '',
                                 '001.intro.md',
                             ]
                         },
@@ -93,7 +93,7 @@ module.exports = {
                             title: '博客 2021',
                             collapsable: false,
                             children: [
-                                'readme.md',
+                                '',
                                 '001-build-blog.md',
                             ]
                         },
@@ -103,7 +103,7 @@ module.exports = {
                             title: '时间轴',
                             collapsable: false,
                             children: [
-                                'readme.md',
+                                '',
                                 '2021',
                                 '2020',
                             ]
