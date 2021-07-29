@@ -58,7 +58,7 @@ module.exports = {
                     },
                     {
                         text: '关于',
-                        link: '/about.md'
+                        link: '/about'
                     },
                     {
                         text: '留言',
