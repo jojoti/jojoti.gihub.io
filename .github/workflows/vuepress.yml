@@ -40,11 +40,11 @@ jobs:
       - run: npm install
       - run: npm run docs:build
       #      - run: yarn docs:build
-      #      - run: cp CNAME blog/.vuepress/dist
+      #      - run: cp CNAME docs/.vuepress/dist
       - name: commit push
         run: |
           rm -rf .git
-          cd blog/.vuepress/dist
+          cd docs/.vuepress/dist
           git config --global init.defaultBranch gh-pages
           git init
           git branch -m gh-pages
