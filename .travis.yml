@@ -5,6 +5,7 @@ install:
   - npm ci
 script:
   - npm run docs:build
+#  - cp CNAME blog/.vuepress/dist
 branches:
   only:
     - master    # 构建的分支 发布到 master 分支 个人主页必须这样配置
